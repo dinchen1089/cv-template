@@ -4,36 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dinchen-CV</title>
     <style> 
+    body {
+        margin-right: 100px;
+        background-color: #d4d1d1;
+    }
     .parent {
         width: 100%;
         display : flex;
         flex-direction : row;
-        border: 1px solid red;
+        border-bottom: 2px solid black;;
         margin: 20px;
+        word-wrap: break-word;
     }
     .index {
 
     height : 60px;
     width: 20%;
-    background-color: pink;
-    color: white;
+   /* background-color: pink;*/
+    font-style: italic;
+    word-wrap: break-word;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
     }
-    .index-child {
 
-    /*display: inline-block;*/
+    .index-child {
     width : 80%;
     height : 90px;
     word-wrap: break-word;
-    background-color: blue;
-    color: white;
+    /*background-color: blue;*/
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    }
+    span {
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+    li {
+        list-style-type:none;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    .title {
+
+        line-height: 10px;
+        font-size: 15px;
+    }
+
+    .education h2 {
+
+        display: inline;
     }
     </style>
 </head>
 <body>
     <div>
-        <div class ="parent">
+        <div class ="parent" style = "height:150px">
+            <div class="index" style="width: 60%; height:100px;"> 
+                <h2>Jonathan Doe</h2>
+                <h3>Web Designer, Director</h3> 
+            </div>
+            <div class ="index-child" style="width: 40%;">
+                <ul>
+                    <li><button>Download Pdf</button></li>
+                    <li>name@yourdomain.com</li>
+                    <li>(313) - 867-5309</li>
+                </ul>  
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class ="parent" style = "height:150px">
             <div class="index"> Profile </div>
             <div class ="index-child">
                 <p> 
@@ -45,22 +92,22 @@
         </div>
     </div>
     <div>
-        <div class ="parent">
+        <div class ="parent" style = "height:200px">
             <div class="index"> Skill </div>
             <div class="index-child" style ="width: 28%">
-                 Web Development
+                <span>Web Development</span> 
                  <p>
                     Assertively exploit wireless initiatives rather than synergistic core competencies. 
                  </p>
             </div>
             <div class="index-child" style ="width: 28%">
-                Interface Design
+               <span> Interface Design</span>
                 <p>
                     Credibly streamline mission-critical value with multifunctional functionalities. 
                 </p>
             </div>
             <div class="index-child" style ="width: 28%">
-                Project Direction
+                <span>Project Direction</span>
                 <p>
                     Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
                 </p>
@@ -68,7 +115,7 @@
         </div>
     </div>
     <div>
-        <div class ="parent">
+        <div class ="parent" style = "height:150px">
             <div class="index"> Technical </div>
             <div class="index-child" style ="width: 28%">
                <ul>
@@ -90,6 +137,46 @@
                     <li>Windows XP/Vista</li>
                     <li>Linux</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class ="parent" >
+            <div class="index"> Experience </div>
+            <div>
+                <div>
+                <div class = "index-child" style="height: 200px; display: block; width:100%;">
+                    <div class="title">
+                        <h1>Facebook</h1>
+                        <h1>2005-2007</h1>
+                        <h1>Senior Interface Designer</h1>
+                    </div>
+                    <p>
+                        Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. 
+                    </p>
+                </div>
+                <div class = "index-child" style="height: 230px; display: block; width:100%;">
+                    <div class="title">
+                        <h1>Apple Inc.</h1>
+                        <h1>2005-2007</h1>
+                        <h1>Junior Interface Designer</h1>
+                    </div>
+                    <p>
+                        Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class ="parent" style="height:150px">
+            <div class="index"> Education </div>
+            <div class ="index-child">
+                <div class="education">
+                <h2>Indiana University - Bloomington, Indiana</h3>
+                <h4>Dual Major, Economics and English — 4.0 GPA</h2>
+                </div>
             </div>
         </div>
     </div>
