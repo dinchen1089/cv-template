@@ -1,6 +1,97 @@
-<html>
-<head> <title> Mycv</title>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .parent {
+        width: 100%;
+        display : flex;
+        flex-direction : row;
+        border: 1px solid red;
+        margin: 20px;
+    }
+    .index {
+
+    height : 60px;
+    width: 20%;
+    background-color: pink;
+    color: white;
+    }
+    .index-child {
+
+    /*display: inline-block;*/
+    width : 80%;
+    height : 90px;
+    word-wrap: break-word;
+    background-color: blue;
+    color: white;
+    }
+    </style>
+</head>
 <body>
+    <div>
+        <div class ="parent">
+            <div class="index"> Profile </div>
+            <div class ="index-child">
+                <p> 
+                    I am a software enginner with an experince of more thatn 6 months. I have taken part in code design. I am familar with
+                 debugging in visual studio. My area of expertise is c++ and win32 apis. I also have some experience with web devlopement.
+          
+                </p>  
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class ="parent">
+            <div class="index"> Skill </div>
+            <div class="index-child" style ="width: 28%">
+                 Web Development
+                 <p>
+                    Assertively exploit wireless initiatives rather than synergistic core competencies. 
+                 </p>
+            </div>
+            <div class="index-child" style ="width: 28%">
+                Interface Design
+                <p>
+                    Credibly streamline mission-critical value with multifunctional functionalities. 
+                </p>
+            </div>
+            <div class="index-child" style ="width: 28%">
+                Project Direction
+                <p>
+                    Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class ="parent">
+            <div class="index"> Technical </div>
+            <div class="index-child" style ="width: 28%">
+               <ul>
+                   <li>XHTML</li>
+                   <li>CSS</li>
+                   <li>JavaScript</li>
+               </ul>
+            </div>
+            <div class="index-child" style ="width: 28%">
+                <ul>
+                    <li>Jquery</li>
+                    <li>PHP</li>
+                    <li>CVS / Subversion</li>
+                </ul>
+            </div>
+            <div class="index-child" style ="width: 28%">
+                <ul>
+                    <li>OS X</li>
+                    <li>Windows XP/Vista</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
